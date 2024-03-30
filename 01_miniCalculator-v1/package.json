@@ -1,0 +1,19 @@
+{
+  "name": "01_minicalculator-v1",
+  "version": "1.0.1",
+  "description": "\"Calculator v.1 using Typerscript, Node.js and inquirer by Samia72329.This calculator program offers continuous calculation functionality, allowing users to perform multiple operations in sequence without restarting the program. Additionally, it includes a built-in feature to prevent division by zero, ensuring accurate and error-free calculations ",
+  "main": "index.js",
+  "type": "module" ,
+  "bin" : "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "samia72329",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.16"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}

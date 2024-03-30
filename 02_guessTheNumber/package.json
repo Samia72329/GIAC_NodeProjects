@@ -1,0 +1,19 @@
+{
+  "name": "02_guess_the_hidden_number",
+  "version": "1.0.0",
+  "description": "\"Number Guessing Game using Typescript, Node.js and inquirer by samia72329\"",
+  "main": "index.js",
+  "type": "module",
+  "bin" : "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samia 72329",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.16"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
+  }
+}
