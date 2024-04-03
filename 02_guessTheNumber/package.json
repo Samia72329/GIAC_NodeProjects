@@ -1,6 +1,6 @@
 {
   "name": "02_guess_the_hidden_number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "\"Number Guessing Game using Typescript, Node.js and inquirer by samia72329\"",
   "main": "index.js",
   "type": "module",

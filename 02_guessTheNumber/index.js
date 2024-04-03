@@ -4,7 +4,6 @@ import inquirer from 'inquirer';
 import chalk from 'chalk';
 const pink = chalk.hex('#e647db');
 const green = chalk.hex('#2be35c');
-const yellow = chalk.hex('#f0f033');
 console.log(pink(`
 
 ██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗    ████████╗ ██████╗ 
