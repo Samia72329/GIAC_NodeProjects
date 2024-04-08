@@ -6,7 +6,9 @@ const red = chalk.bold.bgHex("#0f0000").hex("#ff0505");
 const yel = chalk.hex("#fff705");
 const cyan = chalk.hex("#1afff7");
 const pink = chalk.hex("#f50f73");
+const gray = chalk.gray;
 let myTask = [];
+let dnTask = [];
 // function definition
 const viewTask = () => {
     if (myTask.length == 0) {
@@ -25,6 +27,19 @@ const viewTask = () => {
         myTask.forEach((element, index) => {
             console.log(pink(`          Task ${index + 1}: ${element}`));
         });
+        if (dnTask.length == 0) {
+        }
+        else {
+            console.log(gray(`
+        +-++-++-++-+ +-++-++-++-++-+
+        |d||o||n||e| |t||a||s||k||s|
+        +-++-++-++-+ +-++-++-++-++-+
+        
+        `));
+            dnTask.forEach((element, index) => {
+                console.log(gray(`          Task ${index + 1}: ${element}`));
+            });
+        }
     }
 };
 const remove = async () => {
@@ -65,6 +80,19 @@ const addTask = async () => {
             console.log("Task cannot be empty");
     });
 };
+const doneTask = async () => {
+    await inquirer.prompt([{
+            name: "done",
+            type: "checkbox",
+            message: yel('Mark as completed:'),
+            choices: myTask,
+        }]).then((answer) => {
+        answer.done.forEach((element) => {
+            dnTask.push(element);
+            myTask.splice(myTask.indexOf(answer.done), 1);
+        });
+    });
+};
 const toDoList = async () => {
     await inquirer.prompt([
         {
@@ -72,7 +100,7 @@ const toDoList = async () => {
             type: "list",
             message: yel('|S||E||L||E||C||T|'),
             // choices: [pink("Add task"), pink("Delete task"), pink("View tasks"), pink("Exit")]
-            choices: ["Add task", "Delete task", "View tasks", "Exit"]
+            choices: ["Add task", "Delete task", "View tasks", "Done", "Exit"]
         },
     ]).then(async (answer) => {
         switch (answer.action) {
@@ -84,6 +112,9 @@ const toDoList = async () => {
                 break;
             case "View tasks":
                 viewTask();
+                break;
+            case "Done":
+                await doneTask();
                 break;
             case "Exit":
                 flag = false;
@@ -105,3 +136,8 @@ while (flag) {
     await toDoList();
 }
 console.log("--- Bye! See you again! ---");
+let myobj = {
+    stuName: "James",
+    rollnum: 96,
+};
+let myvar = "key";
