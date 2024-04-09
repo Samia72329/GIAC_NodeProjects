@@ -30,8 +30,8 @@ console.log(cyan(`
  '------------------' '-----------------' '-----------------'
 
 `));
-console.log(blue("Default pin"), cyan(myPin));
-console.log(blue("---Default balance amount:"), cyan(myBalance), blue("Rs---"));
+console.log(blue("  ---Default pin"), cyan(myPin),"---  ");
+console.log(blue("  ---Default balance amount:"), cyan(myBalance), blue("Rs---  "));
 
 do {
 let pinFlag = false;

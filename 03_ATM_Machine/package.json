@@ -1,6 +1,6 @@
 {
   "name": "03_atm_machine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The ATM machine application, developed using TypeScript, Node.js, and the Inquirer package, offers users the ability to authenticate themselves within three attempts. Upon exceeding this limit, the account is automatically locked for security purposes. The program also includes a feature to detect and handle cases of insufficient balance when users attempt to withdraw amounts exceeding their balance.\nAdditionally, the application provides a fast cash feature for quick withdrawals and a pin change feature for users to update their PINs as needed. These features enhance the usability and security of the ATM machine, ensuring a seamless and secure banking experience for users.",
   "main": "index.js",
   "type": "module",
@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "cli-progress": "^3.12.0",
     "inquirer": "^9.2.17"
