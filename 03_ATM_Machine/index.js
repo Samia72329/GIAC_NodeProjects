@@ -1,6 +1,18 @@
 #! /usr/bin/env node
 import inquirer from 'inquirer';
 //inquirer is a module or package
+console.log(`
+
+┓ ┏┏┓┓ ┏┓┏┓┳┳┓┏┓  ┏┳┓┏┓           
+┃┃┃┣ ┃ ┃ ┃┃┃┃┃┣    ┃ ┃┃           
+┗┻┛┗┛┗┛┗┛┗┛┛ ┗┗┛   ┻ ┗┛           
+┏┓┏┳┓┳┳┓  ┳┓┏┓┳┓┓┏┓  ┏┓┏┓┳┓┓┏┳┏┓┏┓
+┣┫ ┃ ┃┃┃  ┣┫┣┫┃┃┃┫   ┗┓┣ ┣┫┃┃┃┃ ┣ 
+┛┗ ┻ ┛ ┗  ┻┛┛┗┛┗┛┗┛  ┗┛┗┛┛┗┗┛┻┗┛┗┛
+                                  
+
+
+`);
 let myBalance = 10000;
 let myPin = 1234;
 let attempts = 0;

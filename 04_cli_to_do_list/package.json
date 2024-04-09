@@ -1,6 +1,6 @@
 {
   "name": "04_cli_to_do_list",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A CLI to-do list application developed using TypeScript, Node.js, and the Inquirer package. The application allows users to update, delete, view the to-do list, and exit when done. New tasks are added at the end of the list, and users can delete tasks by providing the task number.",
   "main": "index.js",
   "type": "module",

@@ -100,7 +100,7 @@ const toDoList = async () => {
             type: "list",
             message: yel('|S||E||L||E||C||T|'),
             // choices: [pink("Add task"), pink("Delete task"), pink("View tasks"), pink("Exit")]
-            choices: ["Add task", "Delete task", "View tasks", "Done", "Exit"]
+            choices: ["Add task", "Delete task", "View tasks", "Mark as Done", "Exit"]
         },
     ]).then(async (answer) => {
         switch (answer.action) {
@@ -113,7 +113,7 @@ const toDoList = async () => {
             case "View tasks":
                 viewTask();
                 break;
-            case "Done":
+            case "Mark as Done":
                 await doneTask();
                 break;
             case "Exit":
